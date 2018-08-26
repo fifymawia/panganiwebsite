@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>download and print admission form</title>
+  <style type="text/css">
+    
+    /* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+  </style>
+</head>
+<body>
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Students First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="lname">Surname</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your surname..">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="lname">Gender</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="gender..">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="lname">Date of Birth</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="date of birth..">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="lname">Previous School</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Name of the school student was in..">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="lname">Parents/Gurdians Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Gurdians/Parents name..">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="lname">Parents/Gurdians Phone Number</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="phone number..">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="lname">Alternative Phone Numbers</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="alt phone number..">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="lname">Home Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="address.">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="lname">Academic Year To report to school</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Region</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Nairobi</option>
+          <option value="canada">Western</option>
+          <option value="usa">Rift Valley</option>
+           <option value="usa">Coastal</option> 
+            <option value="usa">Eastern</option> 
+             <option value="usa">Northern</option> 
+              <option value="usa">Centrel</option> 
+        
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Any special needs about the student</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+   
+  </form>
+</div>
+ <script type="text/javascript">
+            window.print();
+            </script>
+</body>
+</html>
